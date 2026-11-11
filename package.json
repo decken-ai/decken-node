@@ -1,0 +1,35 @@
+{
+  "name": "@decken/sdk",
+  "version": "1.1.0",
+  "description": "Official TypeScript / Node.js SDK and CLI for Decken — The Native OpenXML (.pptx) Slide Generation Kernel",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "bin": {
+    "decken": "./bin/decken.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decken-ai/decken-node.git"
+  },
+  "homepage": "https://docs.decken.ai"
+}
